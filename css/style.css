@@ -42,7 +42,7 @@ body {
   height: 1024px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* tidak center ke tengah container */
   align-items: center;
 }
 
@@ -54,8 +54,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-top: 250px;
+  align-items: center; 
+  margin-top: 250px; /* tidak bisa center menggunakan justify-content */
 }
 
 .login-text {
@@ -175,7 +175,7 @@ body {
 .copyright {
   width: 960px;
   height: 49px;
-  padding: 16px, 0px, 16px, 0px;
+  padding: 16px, 0px;
   gap: 10px;
   opacity: 0px;
   margin-top: auto;
@@ -189,11 +189,33 @@ body {
 }
 
 /* MAIN PAGE */
+.header-container {
+  background-color: #f3f5f6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+.header-container button {
+  width: 105px;
+  height: 38px;
+  background-color: #005555;
+  color:#FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.4px;
+  border-radius: 24px;
+  padding: 8px, 26px;
+  cursor: pointer;
+}
+
 .main-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 91vh;
   background-color: #f3f5f6;
 }
 
