@@ -31,7 +31,7 @@
             </button>
             <button type="button" class="forget-password">Lupa Password?</button>
           </div>
-          <button class="button-login" type="submit">Login</button>
+          <button class="button-login" type="submit" onclick="login()">Login</button>
         </form>
         <p class="or">atau</p>
         <button class="google-login-button">
@@ -44,5 +44,10 @@
       </div>
     </div>
   </div>
+  <script>
+    function login() {
+        window.location.href = 'main.html';
+    }
+</script>
 </body>
 </html>
