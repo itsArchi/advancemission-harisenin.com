@@ -54,7 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   margin-top: 250px; /* tidak bisa center menggunakan justify-content */
 }
 
@@ -202,7 +202,7 @@ body {
   width: 105px;
   height: 38px;
   background-color: #005555;
-  color:#FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   line-height: 22.4px;
@@ -261,7 +261,7 @@ body {
   font-weight: 400;
   line-height: 28px;
   text-align: left;
-  color: #3C3C43;
+  color: #3c3c43;
 }
 
 .iphone-image {
@@ -270,4 +270,80 @@ body {
   gap: 10px;
   border-radius: 60px 0px 0px 0px;
   opacity: 0px;
+}
+
+/* MAIN PAGE */
+.header-main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+}
+
+.logo-search {
+  display: flex;
+  align-items: center;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 15px;
+  width: 280px;
+  height: 40px;
+}
+
+.star-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 20px; /* Adjust the size of the image as needed */
+  height: 20px; /* Adjust the size of the image as needed */
+}
+
+.input-search {
+  padding: 10px 10px 10px 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-user {
+  display: flex;
+  align-items: center;
+}
+
+.button-login {
+  padding: 10px 20px;
+  border: none;
+  background-color: #5cb85c;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 105px;
+  height: 38px;
+}
+
+.button-login button:hover {
+  background-color: #4cae4c;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile p {
+  margin: 0;
+  font-size: 16px;
 }
