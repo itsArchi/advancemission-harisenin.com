@@ -278,12 +278,20 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #f4f4f4;
+  background-color: #FFFFFF;
 }
 
 .logo-search {
   display: flex;
   align-items: center;
+  gap: 24px;
+  margin-left: 40px;
+}
+
+.logo-search .main-logo {
+  width: 132px;
+  height: 41px;
+  /* border: 1px solid black; */
 }
 
 .input-container {
@@ -296,17 +304,22 @@ body {
 .star-icon {
   position: absolute;
   left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40%;
+  /* transform: translateY(-50%); */
   pointer-events: none;
-  width: 20px; /* Adjust the size of the image as needed */
-  height: 20px; /* Adjust the size of the image as needed */
+  width: 24px; 
+  height: 24px; 
 }
 
 .input-search {
-  padding: 10px 10px 10px 40px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  margin-top: 8px;
+  padding: 8px 40px;
+  border: 1px solid #BDBDBD;
+  border-radius: 24px;
+  width: 280px;
+  height: 40px;
+  font-size: 16px;
+  color:  #616161;
 }
 
 .login-user {
@@ -314,36 +327,47 @@ body {
   align-items: center;
 }
 
-.button-login {
-  padding: 10px 20px;
+.star-icon-login {
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+.button-login-main {
+  padding: 8px 26px;
+  gap: 8px;
   border: none;
-  background-color: #5cb85c;
+  background-color: #005555;
   color: white;
   font-size: 16px;
-  border-radius: 4px;
+  border-radius: 24px;
   cursor: pointer;
   width: 105px;
   height: 38px;
-}
-
-.button-login button:hover {
-  background-color: #4cae4c;
 }
 
 .profile {
   display: flex;
   align-items: center;
   margin-left: 20px;
+  gap: 11px;
 }
 
-.profile img {
+.profile .user-iamge {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-right: 10px;
 }
 
 .profile p {
-  margin: 0;
   font-size: 16px;
+  font-weight: 600;
+  color: #222325;
+  line-height: 19,6px;
+
+}
+
+.star-icon-login {
+  width: 20px;
+  height: 20px;
 }
