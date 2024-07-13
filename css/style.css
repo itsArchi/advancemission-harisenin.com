@@ -189,7 +189,7 @@ body {
   border-top: 1px solid #e1e6ef;
 }
 
-/* MAIN PAGE */
+/* INDEX PAGE */
 .header-container {
   background-color: #f3f5f6;
   display: flex;
@@ -219,21 +219,19 @@ body {
   align-items: center;
   height: 91vh;
   background-color: #f3f5f6;
+  padding: 20px;
 }
 
 .desc {
-  width: 600px;
-  height: 446px;
-  gap: 0px;
-  opacity: 0px;
-  /* border: 1px solid black; */
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  opacity: 1; 
 }
 
 .content-head {
-  width: 600px;
-  height: 48px;
-  padding: 0px 0px 32px 0px;
-  gap: 10px;
+  width: 100%;
+  padding-bottom: 32px;
   font-size: 13px;
   font-weight: 700;
   line-height: 15.6px;
@@ -243,11 +241,8 @@ body {
 }
 
 .content-title {
-  width: 600px;
-  height: 90px;
-  padding: 0px 0px 32px 0px;
-  gap: 10px;
-  opacity: 0px;
+  width: 100%;
+  padding-bottom: 32px;
   font-size: 48px;
   font-weight: 700;
   line-height: 57.6px;
@@ -257,8 +252,7 @@ body {
 }
 
 .content-desc {
-  width: 600px;
-  height: 308px;
+  width: 100%;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -267,11 +261,11 @@ body {
 }
 
 .iphone-image {
-  width: 580px;
-  height: 469px;
-  gap: 10px;
+  width: 100%;
+  max-width: 580px;
+  height: auto;
   border-radius: 60px 0px 0px 0px;
-  opacity: 0px;
+  opacity: 1; 
 }
 
 /* MAIN PAGE */
@@ -701,4 +695,39 @@ footer {
   line-height: 16.8px;
   color: #6C717A;
   border-top: 1px solid #E1E6EF
+}
+
+/* RERSPONSIVE INDEX PAGE */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-title {
+    font-size: 36px;
+    line-height: 43.2px;
+  }
+
+  .content-desc {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+/* Media queries for mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .content-title {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+
+  .content-desc {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .iphone-image img {
+    width: 100%;
+    height: auto;
+  }
 }
