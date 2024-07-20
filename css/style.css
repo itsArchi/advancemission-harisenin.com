@@ -42,7 +42,7 @@ body {
   height: 1024px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* tidak center ke tengah container */
+  justify-content: center; 
   align-items: center;
 }
 
@@ -55,7 +55,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 250px; /* tidak bisa center menggunakan justify-content */
+  margin-top: 250px; 
 }
 
 .login-text {
